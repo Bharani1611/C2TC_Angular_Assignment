@@ -23,10 +23,6 @@
 ---
 ## 🚀 Running the Application
 
-### Prerequisites
-
-- Node.js (v18 or later)
-- Angular CLI (v19)
 
 ### Steps to Run
 
