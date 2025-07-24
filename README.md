@@ -1,18 +1,6 @@
 # Student Info Dashboard - Angular Assignment
 
 ---
-
-## 🏫 Program Overview
-
-| Detail          | Information                          |
-| --------------- | ------------------------------------ |
-| 👨‍🏫 Organization | TNS India Foundation                 |
-| 🎓 Program      | C2TC (College to Corporate)          |
-| 💻 Track        | Java Full Stack (Core Java Phase)    |
-| 🛠️ Tools        | Eclipse IDE, Java 21, GitHub         |
-| 📍 Status       | 🟢 Ongoing – Assignments in Progress |
-
----
 ## 📸 Application Output
 
 ### 🖥️ Full Dashboard View
@@ -67,7 +55,17 @@
    ```bash
    ng build
    ```
+---
 
+## 🏫 Program Overview
+
+| Detail          | Information                          |
+| --------------- | ------------------------------------ |
+| 👨‍🏫 Organization | TNS India Foundation                 |
+| 🎓 Program      | C2TC (College to Corporate)          |
+| 💻 Track        | Java Full Stack (Core Java Phase)    |
+| 🛠️ Tools        | Eclipse IDE, Java 21, GitHub         |
+| 📍 Status       | 🟢 Ongoing – Assignments in Progress |
 
 ---
 
@@ -83,4 +81,4 @@
 🔗 [**LinkedIn**](https://www.linkedin.com/in/bharani-k-10824b299)
 
 ---
-"# C2TC_Angular_Assignment-" 
+
