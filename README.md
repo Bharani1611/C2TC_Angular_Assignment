@@ -1,6 +1,4 @@
-# Student Info Dashboard - Angular Basics Assignment
-
-**A comprehensive Angular application demonstrating core Angular concepts through an interactive student information management system. This project showcases data binding, directives, pipes, and modern Angular standalone components architecture with a professional user interface.**
+# Student Info Dashboard - Angular Assignment
 
 ---
 
@@ -15,72 +13,26 @@
 | 📍 Status       | 🟢 Ongoing – Assignments in Progress |
 
 ---
+## 📸 Application Output
 
-## 📋 Project Details
+### 🖥️ Full Dashboard View
 
-This Angular application demonstrates fundamental Angular concepts including data binding, directives, and pipes. Built as part of the C2TC program assignment to showcase modern web development skills using Angular framework.
-
----
-
-## 🛠️ Technologies Used
-
-### Frontend Framework
-
-- **Angular 19**: Latest version with standalone components
-- **TypeScript**: Type-safe JavaScript development
-- **HTML5**: Modern semantic markup
-- **CSS3**: Advanced styling with flexbox and grid
-
-### Angular Features
-
-- **Standalone Components**: No need for NgModules
-- **Reactive Forms**: FormsModule for two-way binding
-- **CommonModule**: Structural directives support
-- **Custom Pipes**: Data transformation capabilities
-
-### Development Tools
-
-- **Angular CLI**: Project scaffolding and build tools
-- **Node.js**: Runtime environment
-- **npm**: Package management
-- **VS Code**: Development environment (recommended)
-
-### Libraries & Modules
-
-- **FormsModule**: Two-way data binding support
-- **CommonModule**: *ngIf, *ngFor directives
-- **Custom Pipes**: Reverse string transformation
+<img width="1264" height="893" alt="FULL_img_output" src="https://github.com/user-attachments/assets/4a817f4d-238f-4a37-a94d-623f7ba1b5fb" />
 
 ---
 
-## ✨ Application Main Features
+### 🔹 Student Dashboard View
 
-### 🎯 Core Functionality
+<img width="1623" height="904" alt="Dashboard" src="https://github.com/user-attachments/assets/edd83b22-d896-4945-b26f-db4633d1f47d" />
 
-- **Student Information Dashboard**: Comprehensive display of student details
-- **Interactive Status Management**: Toggle student active/inactive status
-- **Real-time Name Editing**: Two-way binding for instant updates
-- **Dynamic Content Display**: Conditional sections based on student status
-- **Multi-student View**: Bonus feature showing multiple students
 
-### 🎨 User Interface Features
 
-- **Responsive Design**: Works on desktop and mobile devices
-- **Professional Styling**: Modern card-based layout with gradient background
-- **Interactive Elements**: Hover effects and smooth transitions
-- **Color-coded Status**: Green for active, red for inactive students
-- **Form Validation**: Real-time input validation and feedback
+### 🔹 All Students Report View
 
-### 💡 Technical Features
+<img width="1660" height="901" alt="Student_Details" src="https://github.com/user-attachments/assets/b56d046c-07bd-418f-bd84-1f293f1c4b4b" />
 
-- **Standalone Components**: Modern Angular architecture
-- **Custom Pipes**: Reverse name transformation
-- **Currency Formatting**: Indian Rupees (₹) display
-- **Date Formatting**: Multiple date display formats
-- **Event Handling**: Click, input, and form events
 
 ---
-
 ## 🚀 Running the Application
 
 ### Prerequisites
@@ -116,32 +68,6 @@ This Angular application demonstrates fundamental Angular concepts including dat
    ng build
    ```
 
----
-
-## 🏗️ Project Structure
-
-```
-student-dashboard/
-├── src/
-│   ├── app/
-│   │   ├── student/
-│   │   │   ├── student.ts          # Component logic & data
-│   │   │   ├── student.html        # Template with all binding types
-│   │   │   └── student.css         # Component styling
-│   │   ├── reverse-pipe.ts         # Custom reverse pipe
-│   │   ├── app.ts                  # Main app component
-│   │   ├── app.html                # App template
-│   │   ├── app.css                 # App styling
-│   │   └── app.config.ts           # App configuration
-│   ├── styles.css                  # Global styles
-│   ├── index.html                  # Main HTML file
-│   └── main.ts                     # Application bootstrap
-├── public/
-│   └── favicon.ico                 # App icon
-├── angular.json                    # Angular configuration
-├── package.json                    # Dependencies & scripts
-└── tsconfig.json                   # TypeScript configuration
-```
 
 ---
 
