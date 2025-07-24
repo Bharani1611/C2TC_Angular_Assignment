@@ -1,0 +1,116 @@
+<div class="student-dashboard">
+  <h1>Student Info Dashboard</h1>
+
+  <!-- Single Student Section -->
+  <div class="student-card">
+    <h2>Student Details</h2>
+
+    <!-- Interpolation to display student details -->
+    <div class="student-info">
+      <p><strong>Name:</strong> {{ student.name }}</p>
+      <p><strong>Course:</strong> {{ student.course | uppercase }}</p>
+      <p><strong>Age:</strong> {{ student.age }}</p>
+
+      <!-- Property binding for displaying fees -->
+      <p>
+        <strong>Fees:</strong>
+        <span
+          [innerHTML]="
+            '₹' + (student.fees | currency : 'INR' : 'symbol' : '1.2-2')
+          "
+        ></span>
+      </p>
+
+      <!-- Built-in pipes: date -->
+      <p>
+        <strong>Joining Date:</strong>
+        {{ student.joiningDate | date : "fullDate" }}
+      </p>
+
+      <!-- Attribute directive [style.color] to show active/inactive status -->
+      <p>
+        <strong>Status:</strong>
+        <span [style.color]="student.isActive ? 'green' : 'red'">
+          {{ student.isActive ? "Active" : "Inactive" }}
+        </span>
+      </p>
+
+      <!-- Custom pipe to reverse student name (Bonus) -->
+      <p><strong>Reversed Name:</strong> {{ student.name | reverse }}</p>
+    </div>
+
+    <!-- Event binding (click) to toggle student status -->
+    <button
+      (click)="toggleStatus()"
+      [style.background-color]="student.isActive ? '#ff6b6b' : '#4ecdc4'"
+      class="toggle-btn"
+    >
+      {{ student.isActive ? "Deactivate" : "Activate" }} Student
+    </button>
+
+    <!-- Two-way binding to edit the student name -->
+    <div class="edit-section">
+      <h3>Edit Student Name</h3>
+      <input
+        [(ngModel)]="editableName"
+        placeholder="Enter student name"
+        class="name-input"
+      />
+      <button (click)="updateStudentName()" class="update-btn">
+        Update Name
+      </button>
+    </div>
+
+    <!-- Structural directive *ngIf to conditionally display content -->
+    <div *ngIf="student.isActive" class="active-student-info">
+      <h3>🎓 Active Student Benefits</h3>
+      <ul>
+        <li>Access to library resources</li>
+        <li>Online course materials</li>
+        <li>Student portal access</li>
+        <li>Campus facilities</li>
+      </ul>
+    </div>
+
+    <div *ngIf="!student.isActive" class="inactive-student-info">
+      <h3>⚠️ Inactive Student Notice</h3>
+      <p>Please contact administration to reactivate your account.</p>
+    </div>
+  </div>
+
+  <!-- Multiple Students Section (Bonus) -->
+  <div class="students-list">
+    <h2>All Students (*ngFor Demonstration)</h2>
+
+    <!-- *ngFor loop to display multiple students -->
+    <div *ngFor="let student of students; let i = index" class="student-item">
+      <div class="student-summary">
+        <h4>{{ i + 1 }}. {{ student.name | uppercase }}</h4>
+        <p><strong>Course:</strong> {{ student.course }}</p>
+        <p>
+          <strong>Fees:</strong>
+          {{ student.fees | currency : "INR" : "symbol" : "1.2-2" }}
+        </p>
+        <p>
+          <strong>Joined:</strong>
+          {{ student.joiningDate | date : "shortDate" }}
+        </p>
+        <p>
+          <strong>Status:</strong>
+          <span [style.color]="student.isActive ? 'green' : 'red'">
+            {{ student.isActive ? "Active" : "Inactive" }}
+          </span>
+        </p>
+        <p><strong>Reversed Name:</strong> {{ student.name | reverse }}</p>
+
+        <button
+          (click)="toggleStudentStatus(student)"
+          [style.background-color]="student.isActive ? '#ff6b6b' : '#4ecdc4'"
+          class="toggle-btn small"
+        >
+          {{ student.isActive ? "Deactivate" : "Activate" }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
